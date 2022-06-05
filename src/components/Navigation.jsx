@@ -1,15 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
-function Navigation() {
+function Navigation(props) {
     return (
-        <nav>
-            <ul>
-                <li>item 1</li>
-                <li>item 2</li>
-                <li>item 3</li>
-                <li>item 4</li>
-            </ul>
-        </nav>
+        <div className="navigation">
+            <nav>
+                <ul>
+                    <li>
+                        <NavLink to="/">home</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/about">About</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/skills">Skills</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/portfolio">Works</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/contact">Contact</NavLink>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     );
 }
 

@@ -7,4 +7,15 @@
 body {
     background: $principal_bg;
     color: $nm_text;
+    overflow: hidden;
+}
+
+li {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $nm_text;
 }
