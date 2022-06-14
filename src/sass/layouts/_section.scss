@@ -1,7 +1,22 @@
 .section {
-    width: 70%;
+    width: 75%;
+
     height: 100vh;
-    padding: 1%;
-    // position: absolute;
-    // right: -200%;
+    padding: 2%;
+    position: absolute;
+    top: 10%;
+    right: -200%;
+
+    transition: right 0.8s linear;
+    // transition: right 1s ease-in-out;
 }
+
+.active_section {
+    padding-left: 180px;
+    padding-right: 1%;
+    right: 4%;
+}
+
+// .inactive {
+//     right: -200%;
+// }

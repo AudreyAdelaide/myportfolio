@@ -1,0 +1,29 @@
+// ---------- [ RESPONSIVE ]
+
+@mixin tablet {
+    @media screen and (max-width: map-get($breakpoints, tablet)) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+        @content;
+    }
+}
+
+// --------- [ GRADIENTS ]
+
+// => Background gradient
+@mixin gradient_bg {
+    background: linear-gradient(140deg, $accent_1 50%, $accent_2 100%)
+}
+
+// => border gradient
+@mixin border_gradient {
+    border-bottom: 3px;
+    border-style: solid;
+    background-image: linear-gradient(to right, $accent_1 0%, $accent_2 100%);
+}
+
+// => Text gradient

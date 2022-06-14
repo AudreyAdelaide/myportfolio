@@ -1,5 +1,7 @@
 // sass/utils/
 @import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/maps";
 
 // sass/base/
 @import "./base/fonts.scss";
@@ -8,5 +10,8 @@
 // sass/layouts/
 @import "./layouts/app";
 @import "./layouts/header";
+@import "./layouts/navigation";
 @import "./layouts/aside";
 @import "./layouts/section";
+@import "./layouts/reponsive";
+@import "./layouts/footer";
